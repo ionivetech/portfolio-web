@@ -1,8 +1,8 @@
 ---
 const menuLists: { url: string; label: string }[] = [
-  { url: '#', label: 'Home' },
-  { url: '#', label: 'About' },
-  { url: '#', label: 'Skills' },
+  { url: '#homeSection', label: 'Home' },
+  { url: '#aboutSection', label: 'About' },
+  { url: '#skillSection', label: 'Skills' },
   { url: '#', label: 'Experience' },
   { url: '#', label: 'Project' },
   { url: '#', label: 'Contact' }
@@ -20,7 +20,7 @@ const menuLists: { url: string; label: string }[] = [
         menuLists.map((menu) => (
           <a
             href={menu.url}
-            class='text-sm text-gray-400 md:text-base'
+            class='text-sm font-medium text-gray-400 transition-colors duration-200 ease-linear hover:text-blue-400 md:text-base'
           >
             {menu.label}
           </a>

@@ -12,14 +12,17 @@ const HomeSection = () => {
   }
 
   return (
-    <section className='container relative flex h-full w-full flex-col items-center justify-center space-y-12'>
+    <section
+      id='homeSection'
+      className='container relative flex h-[85vh] w-full flex-col items-center justify-center space-y-8 sm:h-screen md:space-y-10 lg:space-y-12'
+    >
       {/* Profile Picture */}
       <img
         src='/profile.jpg'
         alt='profile-picture'
-        width='208'
-        height='208'
-        className='rounded-full'
+        width='192'
+        height='192'
+        className='h-36 w-36 rounded-full md:h-44 md:w-44 lg:h-48 lg:w-48'
       />
 
       <div className='text-center'>
@@ -27,7 +30,7 @@ const HomeSection = () => {
           Farid Nugraha
         </h1>
 
-        <h2 className='mb-7 bg-gradient-to-r from-blue-400 to-teal-600 bg-clip-text text-4xl font-black tracking-tighter text-transparent md:text-5xl lg:text-6xl'>
+        <h2 className='mb-7 bg-gradient-to-r from-blue-400 to-teal-600 bg-clip-text text-4xl font-black tracking-tight text-transparent md:text-5xl md:tracking-tighter lg:text-6xl'>
           Frontend Developer
         </h2>
 
@@ -40,7 +43,7 @@ const HomeSection = () => {
       {/* Hire button */}
       <div className='space-x-2'>
         <button
-          className='rounded-lg border border-slate-700 bg-gradient-to-br from-blue-500 to-teal-600 px-5 py-2.5 font-medium text-white'
+          className='rounded-lg bg-gradient-to-br from-blue-500 to-teal-600 px-5 py-2.5 font-medium text-white'
           onClick={() => sendMessage()}
         >
           Contact Me
@@ -54,7 +57,7 @@ const HomeSection = () => {
         </button>
       </div>
 
-      <div className='absolute bottom-14 h-10 w-6 rounded-full border-2 border-gray-400'>
+      <div className='absolute bottom-14 hidden h-10 w-6 rounded-full border-2 border-gray-400 sm:block'>
         <div className='animate-wheel absolute left-2/4 top-1.5 h-1.5 w-1.5 -translate-x-2/4 rounded-full bg-gray-200' />
       </div>
     </section>
