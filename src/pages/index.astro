@@ -1,12 +1,13 @@
 ---
 import Layout from 'layouts/Layout.astro'
 import HomeSection from 'components/sections/HomeSection'
+import AboutSection from 'components/sections/AboutSection.astro'
 ---
 
 <Layout title='Welcome to Astro.'>
   <HomeSection client:visible />
 
   <div class='container'>
-    <div class='h-[500px] text-white'>halo</div>
+    <AboutSection />
   </div>
 </Layout>
