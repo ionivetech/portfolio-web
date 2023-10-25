@@ -14,6 +14,14 @@ export default {
       colors: {
         background: 'rgb(12, 12, 13)',
         'background-soft': 'rgb(37, 41, 47)'
+      },
+      keyframes: {
+        wheel: {
+          '100%': { opacity: 0, top: '24px' },
+        }
+      },
+      animation: {
+        wheel: 'wheel 1.3s infinite'
       }
     }
   },

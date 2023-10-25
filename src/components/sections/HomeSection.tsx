@@ -12,7 +12,7 @@ const HomeSection = () => {
   }
 
   return (
-    <div className='flex h-full w-full flex-col items-center justify-center space-y-12'>
+    <section className='container relative flex h-full w-full flex-col items-center justify-center space-y-12'>
       {/* Profile Picture */}
       <img
         src='/profile.jpg'
@@ -23,11 +23,18 @@ const HomeSection = () => {
       />
 
       <div className='text-center'>
-        <h1 className='mb-5 text-6xl font-bold tracking-tight text-white'>Farid Nugraha</h1>
+        <h1 className='mb-3 text-4xl font-bold tracking-tight text-white md:text-5xl lg:mb-5 lg:text-6xl'>
+          Farid Nugraha
+        </h1>
 
-        <h2 className='bg-gradient-to-r from-blue-400 to-teal-600 bg-clip-text text-6xl font-black tracking-tighter text-transparent'>
+        <h2 className='mb-7 bg-gradient-to-r from-blue-400 to-teal-600 bg-clip-text text-4xl font-black tracking-tighter text-transparent md:text-5xl lg:text-6xl'>
           Frontend Developer
         </h2>
+
+        <p className='prose text-base text-gray-400 md:text-lg'>
+          A Frontend focused Web Developer building the Frontend of Websites and Web Applications
+          that leads to the success of the overall product
+        </p>
       </div>
 
       {/* Hire button */}
@@ -46,7 +53,11 @@ const HomeSection = () => {
           Download CV
         </button>
       </div>
-    </div>
+
+      <div className='absolute bottom-14 h-10 w-6 rounded-full border-2 border-gray-400'>
+        <div className='animate-wheel absolute left-2/4 top-1.5 h-1.5 w-1.5 -translate-x-2/4 rounded-full bg-gray-200' />
+      </div>
+    </section>
   )
 }
 
