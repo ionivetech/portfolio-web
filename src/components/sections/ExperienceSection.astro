@@ -1,0 +1,78 @@
+---
+import { Icon } from 'astro-icon'
+import dataExperience from 'data/experience.json'
+
+// Interfaces
+interface IExperience {
+  role: string
+  company: string
+  url: string
+  start: string
+  end: string
+  responsibilities: string[]
+  stacks: string[]
+}
+
+const experiences: IExperience[] = dataExperience
+---
+
+<section
+  id='experience-section'
+  class='py-16 sm:py-20'
+>
+  <div class='mb-8'>
+    <h2 class='mb-2 text-4xl font-bold text-white md:text-5xl'>Experience</h2>
+    <p class='prose text-gray-400 md:prose-lg'>I have some work experience in companies</p>
+  </div>
+
+  <!-- Experience list -->
+  <div class='grid w-full max-w-[80ch] grid-cols-1 gap-5'>
+    {
+      experiences.map((experience) => (
+        <a
+          href={experience.url}
+          target='_blank'
+          onclick={!experience.url ? 'return false;' : ''}
+          class='group flex cursor-pointer flex-col gap-4 rounded-lg border border-transparent p-4 transition-all duration-300 ease-in-out hover:border-gray-700 hover:bg-background-soft/30 hover:shadow-skill-hover md:flex-row'
+        >
+          <div class='w-[150px] whitespace-nowrap text-sm font-medium text-gray-400'>
+            {experience.start} - {experience.end}
+          </div>
+
+          <div class='space-y-5'>
+            <div>
+              <div class='mb-1 flex space-x-1.5'>
+                <p class='whitespace-nowrap text-base font-semibold text-white group-hover:text-blue-400'>
+                  {experience.role}
+                </p>
+
+                {experience.url && (
+                  <Icon
+                    name='ph:arrow-up-right-bold'
+                    class='w-4 text-white transition-all duration-300 ease-in-out group-hover:-mt-2 group-hover:ml-2 group-hover:text-blue-400'
+                  />
+                )}
+              </div>
+
+              <p class='text-base font-normal text-gray-400'>{experience.company}</p>
+            </div>
+
+            <ul class=' list-disc pl-3 text-sm leading-loose text-gray-300 sm:text-base sm:leading-9'>
+              {experience.responsibilities.map((responsibility) => (
+                <li>{responsibility}</li>
+              ))}
+            </ul>
+
+            <div class='flex flex-wrap gap-2'>
+              {experience.stacks.map((stack) => (
+                <div class='rounded-full bg-blue-400/10 px-3.5 py-1 text-xs font-medium leading-5 tracking-wide text-blue-300'>
+                  {stack}
+                </div>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>

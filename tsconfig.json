@@ -4,6 +4,7 @@
     "baseUrl": "D:/Project/Portfolio/portfolio-web",
     "paths": {
       "components/*": ["src/components/*"],
+      "data/*": ["src/data/*"],
       "layouts/*": ["src/layouts/*"]
     },
     "jsx": "react-jsx",

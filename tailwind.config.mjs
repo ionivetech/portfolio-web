@@ -19,7 +19,7 @@ export default {
         'background-soft': 'rgb(37, 41, 47)'
       },
       boxShadow: {
-        'skill-hover': '0px 0px 14px rgba(100, 100, 100, 0.37)',
+        'skill-hover': '0px 0px 14px rgba(67, 67, 67, 0.37)',
       },
       gridTemplateColumns: {
         skills: 'repeat(auto-fill, minmax(300px, 1fr))',

@@ -13,8 +13,8 @@ const HomeSection = () => {
 
   return (
     <section
-      id='homeSection'
-      className='container relative flex h-[85vh] w-full flex-col items-center justify-center space-y-8 sm:h-screen md:space-y-10 lg:space-y-12'
+      id='home-section'
+      className='relative flex h-[85vh] w-full flex-col items-center justify-center space-y-8 sm:h-screen md:space-y-10 lg:space-y-12'
     >
       {/* Profile Picture */}
       <img
@@ -58,7 +58,7 @@ const HomeSection = () => {
       </div>
 
       <div className='absolute bottom-14 hidden h-10 w-6 rounded-full border-2 border-gray-400 sm:block'>
-        <div className='animate-wheel absolute left-2/4 top-1.5 h-1.5 w-1.5 -translate-x-2/4 rounded-full bg-gray-200' />
+        <div className='absolute left-2/4 top-1.5 h-1.5 w-1.5 -translate-x-2/4 animate-wheel rounded-full bg-gray-200' />
       </div>
     </section>
   )

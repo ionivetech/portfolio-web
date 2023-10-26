@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon'
+import dataSkill from 'data/skill.json'
 
 // Interfaces
 interface ISkills {
@@ -8,76 +9,25 @@ interface ISkills {
   description: string
 }
 
-const skills: ISkills[] = [
-  {
-    icon: 'vscode-icons:file-type-vue',
-    name: 'Vue JS',
-    description: 'Progressive Javascript framework for building web user interfaces.'
-  },
-  {
-    icon: 'vscode-icons:file-type-reactjs',
-    name: 'React JS',
-    description: 'JavaScript Library for building user interfaces.'
-  },
-  {
-    icon: 'vscode-icons:file-type-nuxt',
-    name: 'Nuxt JS',
-    description: 'Intuitive Vue framework for building universal applications.'
-  },
-  {
-    icon: 'vscode-icons:file-type-astro',
-    name: 'Astro',
-    description: 'The all-in-one web framework designed for speed.'
-  },
-  {
-    icon: 'vscode-icons:file-type-vite',
-    name: 'Vite',
-    description: 'Fast and modern development server and build tool.'
-  },
-  {
-    icon: 'logos:pinia',
-    name: 'Pinia',
-    description: 'The intuitive store for Vue.js.'
-  },
-  {
-    icon: 'logos:redux',
-    name: 'Redux Toolkit',
-    description: 'The official toolset for efficient Redux development.'
-  },
-  {
-    icon: 'vscode-icons:file-type-typescript',
-    name: 'Typescript',
-    description: 'A syntactic superset of JavaScript which adds static typing'
-  },
-  {
-    icon: 'vscode-icons:file-type-sass',
-    name: 'SASS',
-    description: 'Powerful CSS Preprocessor for Enhanced Stylesheets.'
-  },
-  {
-    icon: 'vscode-icons:file-type-tailwind',
-    name: 'Tailwind CSS',
-    description: 'Utility-First CSS Framework for Rapid Web Development.'
-  }
-]
+const skills: ISkills[] = dataSkill
 ---
 
 <section
-  id='skillSection'
+  id='skill-section'
   class='py-16 sm:py-20'
 >
   <div class='mb-8'>
     <h2 class='mb-2 text-4xl font-bold text-white md:text-5xl'>Skills</h2>
-    <p class='prose text-gray-400 md:text-lg'>
+    <p class='prose text-gray-400 md:prose-lg'>
       I have skills in web development, familiar using javascript, typescript, and frontend
       development frameworks such as Vue and React
     </p>
   </div>
 
-  <div class='grid-cols-skills grid gap-5'>
+  <div class='grid grid-cols-skills gap-5'>
     {
       skills.map((skill) => (
-        <div class='hover:shadow-skill-hover flex space-x-4 rounded-lg border border-transparent p-2 transition-all duration-200 ease-linear hover:border-gray-500 hover:bg-background-soft/40 sm:p-3 lg:p-4'>
+        <div class='flex space-x-4 rounded-lg border border-transparent p-2 transition-all duration-300 ease-linear hover:border-gray-700 hover:bg-background-soft/40 hover:shadow-skill-hover sm:p-3 lg:p-4'>
           <div class='flex h-12 w-12 min-w-[48px] max-w-[48px] items-center justify-center rounded-full bg-background-soft'>
             {skill.name === 'Pinia' ? (
               <img

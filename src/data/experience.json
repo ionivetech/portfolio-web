@@ -1,0 +1,55 @@
+[
+  {
+    "role": "Frontend Developer",
+    "company": "Jojonomic",
+    "url": "https://officeless.studio/",
+    "start": "Feb 2022",
+    "end": "Present",
+    "responsibilities": [
+      "Collaborating with RnD teams for developing new features",
+      "Maintain existing web app",
+      "Creating Officeless Drive such as Google Drive",
+      "Revamp UI Application",
+      "Initiate tech stack for rebuild existing web app",
+      "Rebuild web app from VueJS 2 + javascript to VueJS 3 + typescript (coverage 40%)",
+      "Refactor code"
+    ],
+    "stacks": [
+      "Vue JS",
+      "Vite",
+      "Pinia",
+      "Vuex",
+      "Javascript",
+      "Typescript",
+      "Tailwind CSS",
+      "SCSS"
+    ]
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "Gramedia Asri Media",
+    "url": "https://www.gramedia.com/",
+    "start": "Feb 2021",
+    "end": "Jan 2022",
+    "responsibilities": [
+      "Maintained and improvement existing web application",
+      "Create new application for Gramedia Seller",
+      "Collaborating with design, product and backend teams to develop new features",
+      "Code review"
+    ],
+    "stacks": ["Vue JS", "Nuxt JS", "Vuex", "Angular 7", "Typescript", "SCSS", "Less", "Bootstrap"]
+  },
+  {
+    "role": "UI Designer & UI Engineer",
+    "company": "Mekanika Digital Pratama",
+    "url": "",
+    "start": "Jul 2019",
+    "end": "Nov 2020",
+    "responsibilities": [
+      "Discuss with clients to get information on client needs",
+      "Created user flows, mockups and prototypes for improved design planning and implementation",
+      "Slicing UI design and developed into front end web code"
+    ],
+    "stacks": ["Javascript", "CSS", "Codeigniter", "Figma", "Corel Draw"]
+  }
+]
