@@ -1,0 +1,52 @@
+[
+  {
+    "icon": "vscode-icons:file-type-vue",
+    "name": "Vue JS",
+    "description": "Progressive Javascript framework for building web user interfaces."
+  },
+  {
+    "icon": "vscode-icons:file-type-reactjs",
+    "name": "React JS",
+    "description": "JavaScript Library for building user interfaces."
+  },
+  {
+    "icon": "vscode-icons:file-type-nuxt",
+    "name": "Nuxt JS",
+    "description": "Intuitive Vue framework for building universal applications."
+  },
+  {
+    "icon": "vscode-icons:file-type-astro",
+    "name": "Astro",
+    "description": "The all-in-one web framework designed for speed."
+  },
+  {
+    "icon": "vscode-icons:file-type-vite",
+    "name": "Vite",
+    "description": "Fast and modern development server and build tool."
+  },
+  {
+    "icon": "logos:pinia",
+    "name": "Pinia",
+    "description": "The intuitive store for Vue.js."
+  },
+  {
+    "icon": "logos:redux",
+    "name": "Redux Toolkit",
+    "description": "The official toolset for efficient Redux development."
+  },
+  {
+    "icon": "vscode-icons:file-type-typescript",
+    "name": "Typescript",
+    "description": "A syntactic superset of JavaScript which adds static typing"
+  },
+  {
+    "icon": "vscode-icons:file-type-sass",
+    "name": "SASS",
+    "description": "Powerful CSS Preprocessor for Enhanced Stylesheets."
+  },
+  {
+    "icon": "vscode-icons:file-type-tailwind",
+    "name": "Tailwind CSS",
+    "description": "Utility-First CSS Framework for Rapid Web Development."
+  }
+]
