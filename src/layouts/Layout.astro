@@ -1,5 +1,6 @@
 ---
-import Navbar from 'components/Navbar.astro'
+import Navbar from 'components/Navbar.vue'
+import 'aos/dist/aos.css'
 
 // Interfaces
 interface Props {
@@ -52,7 +53,7 @@ const { title } = Astro.props
   <body
     class='h-screen w-full bg-background bg-gradient-to-b from-slate-900 to-background bg-fixed'
   >
-    <Navbar />
+    <Navbar client:only />
     <slot />
   </body>
 </html>

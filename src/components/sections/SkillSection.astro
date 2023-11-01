@@ -24,10 +24,13 @@ const skills: ISkills[] = dataSkill
     </p>
   </div>
 
-  <div class='grid grid-cols-skills gap-5'>
+  <div class='grid grid-cols-skills-sm gap-5 md:grid-cols-skills'>
     {
       skills.map((skill) => (
-        <div class='flex space-x-4 rounded-lg border border-transparent p-2 transition-all duration-300 ease-linear hover:border-gray-700 hover:bg-background-soft/40 hover:shadow-skill-hover sm:p-3 lg:p-4'>
+        <div
+          data-aos='zoom-in'
+          class='flex space-x-4 rounded-lg border border-transparent p-3 transition-all duration-300 ease-linear hover:border-gray-700 hover:bg-background-soft/40 hover:shadow-skill-hover md:p-4'
+        >
           <div class='flex h-12 w-12 min-w-[48px] max-w-[48px] items-center justify-center rounded-full bg-background-soft'>
             {skill.name === 'Pinia' ? (
               <img
