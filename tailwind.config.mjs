@@ -29,7 +29,9 @@ export default {
       },
       gridTemplateColumns: {
         skills: 'repeat(auto-fill, minmax(300px, 1fr))',
-        'skills-sm': 'repeat(auto-fill, minmax(250px, 1fr))'
+        'skills-sm': 'repeat(auto-fill, minmax(250px, 1fr))',
+        project: 'repeat(auto-fill, minmax(400px, 1fr))',
+        'project-sm': 'repeat(auto-fill, minmax(300px, 1fr))'
       },
       keyframes: {
         wheel: {
