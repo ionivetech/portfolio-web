@@ -1,0 +1,70 @@
+---
+import { Icon } from 'astro-icon'
+import dataProject from 'data/project.json'
+
+// Interfaces
+interface IProject {
+  name: string
+  url: string
+  image: string
+  description: string
+  stacks: string[]
+}
+
+const projects: IProject[] = dataProject
+---
+
+<section
+  id='project-section'
+  class='py-16 sm:py-20'
+>
+  <div class='mb-8'>
+    <h2 class='mb-2 text-4xl font-bold text-white md:text-5xl'>Project</h2>
+    <p class='prose text-gray-400 md:prose-lg'>A few projects I've worked on</p>
+  </div>
+
+  <div class='grid grid-cols-skills-sm gap-5 md:grid-cols-skills'>
+    {
+      projects.map((project) => (
+        <a
+          href={project.url}
+          target='_blank'
+          onclick={!project.url ? 'return false;' : ''}
+          data-aos='zoom-in'
+          class='group rounded-xl border border-gray-700 p-3 transition-all duration-300 ease-linear hover:bg-background-soft/40 hover:shadow-skill-hover md:p-4'
+        >
+          <img
+            src={project.image}
+            alt={project.name}
+            width='564'
+            height='329'
+            class='mb-4 h-auto w-full rounded-lg'
+          />
+
+          <div class='mb-5 flex space-x-1.5'>
+            <p class='whitespace-nowrap text-base font-semibold text-white group-hover:text-blue-400'>
+              {project.name}
+            </p>
+
+            {project.url && (
+              <Icon
+                name='ph:arrow-up-right-bold'
+                class='w-4 text-white transition-all duration-300 ease-in-out group-hover:-mt-2 group-hover:ml-2 group-hover:text-blue-400'
+              />
+            )}
+          </div>
+
+          <p class='mb-5 text-sm leading-relaxed text-gray-400'>{project.description}</p>
+
+          <div class='flex flex-wrap gap-2'>
+            {project.stacks.map((stack) => (
+              <div class='rounded-full bg-blue-400/10 px-3.5 py-1 text-xs font-medium leading-5 tracking-wide text-blue-300'>
+                {stack}
+              </div>
+            ))}
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>

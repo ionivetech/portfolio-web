@@ -1,10 +1,11 @@
 [
   {
     "role": "Frontend Developer",
-    "company": "Jojonomic",
+    "company": "Jojonomic (Officeless)",
     "url": "https://officeless.studio/",
     "start": "Feb 2022",
     "end": "Present",
+    "description": "Officeless is an No-Code and Low-Code Platform to build application/system on a single Officeless Studio interface and publish on multiple platform including mobile app (android & IOS) and web application on a single effort.",
     "responsibilities": [
       "Collaborating with RnD teams for developing new features",
       "Maintain existing web app",
@@ -31,6 +32,7 @@
     "url": "https://www.gramedia.com/",
     "start": "Feb 2021",
     "end": "Jan 2022",
+    "description": "Gramedia.com is the largest and most complete online bookstore in Indonesia which provides a variety of quality books, stationery and other office supplies.",
     "responsibilities": [
       "Maintained and improvement existing web application",
       "Create new application for Gramedia Seller",
@@ -45,6 +47,7 @@
     "url": "",
     "start": "Jul 2019",
     "end": "Nov 2020",
+    "description": "Mekanika Digital Pratama is a company that operates in the field of technology services for industry and manufacturing.",
     "responsibilities": [
       "Discuss with clients to get information on client needs",
       "Created user flows, mockups and prototypes for improved design planning and implementation",
