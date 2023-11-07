@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import MenuDropdown from 'components/MenuDropdown.vue'
 
 const isScrollingDown = ref<boolean>(false)
 const menuLists: { url: string; label: string }[] = [
-  { url: '#home-section', label: 'Home' },
   { url: '#about-section', label: 'About' },
   { url: '#skill-section', label: 'Skills' },
   { url: '#experience-section', label: 'Experience' },
   { url: '#project-section', label: 'Project' },
   { url: '#contact-section', label: 'Contact' }
 ]
+const showDropdown = ref<boolean>(false)
 
 const scrollingDown = () => {
   let scrolling
@@ -33,11 +34,17 @@ scrollingDown()
 
 <template>
   <div
-    :class="isScrollingDown ? '-top-20' : 'top-0 w-full border-b'"
-    class="fixed inset-x-0 z-50 mx-auto h-[56px] border-slate-300/10 bg-slate-900/60 py-4 backdrop-blur transition-all duration-300 ease-linear md:h-16"
+    :class="isScrollingDown && !showDropdown ? '-top-20' : 'top-0 w-full border-b'"
+    class="fixed inset-x-0 z-50 mx-auto h-[56px] border-slate-300/10 bg-slate-900/80 py-4 backdrop-blur transition-all duration-300 ease-linear md:h-16"
   >
     <div class="container flex h-full items-center justify-between">
-      <img src="logo.svg" alt="logo" width="40" />
+      <img
+        src="logo.svg"
+        alt="logo"
+        width="40"
+        height="24"
+        class="w-8 sm:w-10 h-auto"
+      />
 
       <div class="hidden space-x-5 sm:block">
         <a
@@ -49,6 +56,17 @@ scrollingDown()
           {{ menu.label }}
         </a>
       </div>
+
+      <img
+        src="/icons/bars.svg"
+        alt="menu-icon"
+        width="24"
+        height="24"
+        class="block sm:hidden cursor-pointer"
+        @click="showDropdown = !showDropdown"
+      />
     </div>
   </div>
+
+  <MenuDropdown v-model="showDropdown" />
 </template>

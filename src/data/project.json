@@ -35,7 +35,7 @@
     "stacks": ["Javascript", "SCSS", "Django"]
   },
   {
-    "name": "Desmigrative Information System (Sistif)",
+    "name": "Desmigrative Information System",
     "url": "https://sistif.kemnaker.go.id/",
     "image": "/project/sistif.png",
     "description": "Admin dashboard for the Ministry of Manpower (Kemnaker)",

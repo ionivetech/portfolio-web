@@ -33,16 +33,18 @@ const projects: IProject[] = dataProject
           data-aos='zoom-in'
           class='group rounded-xl border border-gray-700 p-3 transition-all duration-300 ease-linear hover:bg-background-soft/40 hover:shadow-skill-hover md:p-4'
         >
-          <img
-            src={project.image}
-            alt={project.name}
-            width='564'
-            height='329'
-            class='mb-4 h-auto w-full rounded-lg'
-          />
+          <div class='mb-4 h-min overflow-hidden rounded-lg'>
+            <img
+              src={project.image}
+              alt={project.name}
+              width='564'
+              height='329'
+              class='h-auto w-full rounded-lg transition-all duration-500 ease-in-out group-hover:scale-[1.2]'
+            />
+          </div>
 
           <div class='mb-5 flex items-start space-x-1.5'>
-            <p class='whitespace-pre-wrap text-base font-semibold text-white group-hover:text-blue-400'>
+            <p class='text-base font-semibold text-white group-hover:text-blue-400'>
               {project.name}
             </p>
 

@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon'
 ---
 
 <section
-  id='experience-section'
+  id='contact-section'
   class='py-16 sm:py-20'
 >
   <div class='mb-8'>
@@ -16,7 +16,7 @@ import { Icon } from 'astro-icon'
   <textarea
     id='message-field'
     rows='3'
-    class='w-full resize-none rounded-lg border border-gray-700 bg-slate-900/60 p-3 font-normal text-white placeholder:text-gray-400 focus:border-blue-400 focus:outline-none'
+    class='w-full resize-none rounded-lg border border-gray-700 bg-slate-900/60 p-3 font-normal text-white transition-colors duration-300 ease-linear placeholder:text-gray-400 focus:border-blue-400 focus:outline-none'
     placeholder='Message'
   ></textarea>
 
@@ -43,6 +43,15 @@ import { Icon } from 'astro-icon'
     >
       <Icon
         name='mdi:linkedin'
+        class='h-7 w-7 text-gray-300'
+      />
+    </a>
+    <a
+      href='mailto:fnuugraha@outlook.com'
+      target='_blank'
+    >
+      <Icon
+        name='mdi:email'
         class='h-7 w-7 text-gray-300'
       />
     </a>
