@@ -2,42 +2,42 @@
   {
     "name": "Islam Application",
     "url": "https://faridnugraha-islam.netlify.app/",
-    "image": "/project/islam-app.png",
+    "image": "/project/islam-app.webp",
     "description": "This is a Web application for the Islamic religion, built with Nuxt JS. I create this app for learn develop application using Nuxt JS",
     "stacks": ["Nuxt JS", "Typescript", "Pinia", "Nuxt UI", "Tailwind CSS", "Vite"]
   },
   {
     "name": "Movie Application",
     "url": "https://faridnugraha-movie.netlify.app/",
-    "image": "/project/movie-app.png",
+    "image": "/project/movie-app.webp",
     "description": "This is a Web Movie Application, I create this app for learn develop application using React, Typescript, Vite, and React Router",
     "stacks": ["React JS", "Typescript", "Headless UI", "Tailwind CSS", "Vite"]
   },
   {
-    "name": "Panel Admin Honda Mobil",
+    "name": "Admin Panel Honda Mobil",
     "url": "https://admin.mobilhonda.co.id/",
-    "image": "/project/admin-honda.jpeg",
+    "image": "/project/admin-honda.webp",
     "description": "Admin Panel for manage content and data requirements for the main website",
     "stacks": ["React JS", "Javascript", "Redux Toolkit", "Core UI", "Tailwind CSS", "Vite"]
   },
   {
     "name": "Officeless Drive",
     "url": "",
-    "image": "/project/oos-drive.jpeg",
+    "image": "/project/oos-drive.webp",
     "description": "This is a Web Application for saving data like folder, zip, office file, image, etc such as Google Drive",
     "stacks": ["Vue JS", "Typescript", "Pinia", "Tailwind CSS", "Vite"]
   },
   {
     "name": "Multiseller Gramedia",
     "url": "https://multiseller.gramedia.com/",
-    "image": "/project/multiseller-gramedia.jpeg",
+    "image": "/project/multiseller-gramedia.webp",
     "description": "This is the admin dashboard for inputting data on seller, warehouse and product needs",
-    "stacks": ["Javascript", "SCSS", "Django"]
+    "stacks": ["Javascript", "Bootstrap", "SCSS", "Django"]
   },
   {
     "name": "Desmigrative Information System",
     "url": "https://sistif.kemnaker.go.id/",
-    "image": "/project/sistif.png",
+    "image": "/project/sistif.webp",
     "description": "Admin dashboard for the Ministry of Manpower (Kemnaker)",
     "stacks": ["Jquery", "CSS", "Codeigniter"]
   }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps, defineEmits } from 'vue'
+import { defineProps, defineEmits } from 'vue'
 
 // Props
 defineProps({
@@ -32,6 +32,7 @@ const menuLists: { url: string; label: string }[] = [
         v-for="menu in menuLists"
         :key="menu.url"
         :href="menu.url"
+        :aria-label="menu.label"
         class="py-2 px-3 text-sm font-medium text-gray-400 transition-colors duration-200 ease-linear hover:text-blue-400 md:text-base"
         @click="emits('update:modelValue', false)"
       >

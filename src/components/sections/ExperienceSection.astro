@@ -48,6 +48,7 @@ const experiences: IExperience[] = dataExperience
 
           <a
             href={experience.url}
+            aria-label={experience.company}
             target='_blank'
             onclick={!experience.url ? 'return false;' : ''}
             class='group flex cursor-pointer flex-col gap-4 rounded-lg border border-transparent p-4 transition-all duration-300 ease-in-out hover:border-gray-700 hover:bg-background-soft/30 hover:shadow-skill-hover md:flex-row'

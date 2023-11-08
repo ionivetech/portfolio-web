@@ -28,6 +28,7 @@ const projects: IProject[] = dataProject
       projects.map((project) => (
         <a
           href={project.url}
+          aria-label={project.name}
           target='_blank'
           onclick={!project.url ? 'return false;' : ''}
           data-aos='zoom-in'

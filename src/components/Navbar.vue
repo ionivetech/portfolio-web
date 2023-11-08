@@ -51,6 +51,7 @@ scrollingDown()
           v-for="menu in menuLists"
           :key="menu.url"
           :href="menu.url"
+          :aria-label="menu.label"
           class="text-sm font-medium text-gray-400 transition-colors duration-200 ease-linear hover:text-blue-400 md:text-base"
         >
           {{ menu.label }}
