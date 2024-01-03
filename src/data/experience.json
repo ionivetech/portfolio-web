@@ -4,7 +4,7 @@
     "company": "Jojonomic (Officeless)",
     "url": "https://officeless.studio/",
     "start": "Feb 2022",
-    "end": "Present",
+    "end": "Nov 2023",
     "description": "Officeless is an No-Code and Low-Code Platform to build application/system on a single Officeless Studio interface and publish on multiple platform including mobile app (android & IOS) and web application on a single effort.",
     "responsibilities": [
       "Collaborating with RnD teams for developing new features",
@@ -12,7 +12,7 @@
       "Creating Officeless Drive such as Google Drive",
       "Revamp UI Application",
       "Initiate tech stack for rebuild existing web app",
-      "Rebuild web app from VueJS 2 + javascript to VueJS 3 + typescript (coverage 40%)",
+      "Rebuild web app from VueJS 2 + javascript to VueJS 3 + typescript (coverage 60%)",
       "Refactor code"
     ],
     "stacks": [

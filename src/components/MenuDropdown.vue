@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
-
 // Props
 defineProps({
   modelValue: {
@@ -24,8 +22,8 @@ const menuLists: { url: string; label: string }[] = [
 
 <template>
   <div
-    :class="{'-translate-y-[150%]': !modelValue}"
-    class='fixed top-[56px] left-0 right-0 block sm:hidden w-full bg-slate-900/80 backdrop-blur z-10 border-b border-slate-300/10 transition-all ease-linear duration-300'
+    :class="{ '-translate-y-[150%]': !modelValue }"
+    class="fixed left-0 right-0 top-[56px] z-10 block w-full border-b border-slate-300/10 bg-slate-900/80 backdrop-blur transition-all duration-300 ease-linear sm:hidden"
   >
     <div class="flex flex-col space-y-4 py-4">
       <a
@@ -33,7 +31,7 @@ const menuLists: { url: string; label: string }[] = [
         :key="menu.url"
         :href="menu.url"
         :aria-label="menu.label"
-        class="py-2 px-3 text-sm font-medium text-gray-400 transition-colors duration-200 ease-linear hover:text-blue-400 md:text-base"
+        class="px-3 py-2 text-sm font-medium text-gray-400 transition-colors duration-200 ease-linear hover:text-blue-400 md:text-base"
         @click="emits('update:modelValue', false)"
       >
         {{ menu.label }}

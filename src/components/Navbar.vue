@@ -43,7 +43,7 @@ scrollingDown()
         alt="logo"
         width="40"
         height="24"
-        class="w-8 sm:w-10 h-auto"
+        class="h-auto w-8 sm:w-10"
       />
 
       <div class="hidden space-x-5 sm:block">
@@ -63,7 +63,7 @@ scrollingDown()
         alt="menu-icon"
         width="24"
         height="24"
-        class="block sm:hidden cursor-pointer"
+        class="block cursor-pointer sm:hidden"
         @click="showDropdown = !showDropdown"
       />
     </div>
