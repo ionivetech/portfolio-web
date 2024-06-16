@@ -1,13 +1,20 @@
 {
-  "extends": "astro/tsconfigs/base",
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "D:/Project/Portfolio/portfolio-web",
     "paths": {
-      "components/*": ["src/components/*"],
-      "data/*": ["src/data/*"],
-      "layouts/*": ["src/layouts/*"]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+      "@/*": [
+        "./app/*"
+      ],
+      "@assets/*": [
+        "./app/assets/*"
+      ],
+      "@components/*": [
+        "./app/components/*"
+      ],
+      "@layouts/*": [
+        "./app/layouts/*"
+      ],
+    }
   }
 }
