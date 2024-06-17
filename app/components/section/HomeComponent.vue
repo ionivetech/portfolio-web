@@ -5,10 +5,12 @@
     <!-- Profile Picture -->
     <NuxtImg
       src="/images/profile.webp"
+      alt="profile-picture"
       format="webp"
       preload
       quality="70"
-      alt="profile-picture"
+      width="144"
+      height="144"
       sizes="144px md:176px lg:192px"
       class="rounded-full"
     />

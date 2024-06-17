@@ -39,6 +39,7 @@ const { data: dataProject } = await useAsyncData<Project[]>(() => {
             quality="60"
             width="564"
             height="329"
+            loading="lazy"
             class="rounded-lg transition-all duration-500 ease-in-out group-hover:scale-110"
           />
         </div>

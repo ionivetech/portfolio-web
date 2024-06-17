@@ -11,10 +11,12 @@ useHead({
 </script>
 
 <template>
-  <main class="container">
+  <main>
     <NavbarComponent />
 
     <!-- Section content -->
-    <slot />
+    <div class="container">
+      <slot />
+    </div>
   </main>
 </template>
