@@ -8,6 +8,7 @@ export default {
     './app.vue',
     './error.vue',
   ],
+  darkMode: 'selector',
   theme: {
     container: {
       center: true,

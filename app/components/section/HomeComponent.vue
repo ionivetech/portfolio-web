@@ -46,7 +46,7 @@
       </a>
 
       <a
-        href="#"
+        href="/cv_farid_nugraha.pdf"
         aria-label="CV"
         target="_blank"
       >

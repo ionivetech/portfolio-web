@@ -46,6 +46,9 @@ const { data: dataProject } = await useAsyncData<Project[]>(() => {
 
         <a
           v-if="project.url"
+          :href="project.url"
+          target="_blank"
+          rel="noreferrer"
           class="mb-5 flex items-start space-x-1.5"
         >
           <p class="text-base font-semibold text-white group-hover:text-blue-400">

@@ -30,9 +30,17 @@
   }
 }
 
+html {
+  @apply bg-slate-800;
+}
+
 html,
 body {
-  @apply min-h-screen w-full bg-gradient-to-br from-slate-800 to-background bg-fixed scroll-smooth;
+  @apply min-h-screen w-full scroll-smooth;
+}
+
+body {
+  @apply bg-gradient-to-br from-slate-800 to-background;
 }
 
 /* Transition */

@@ -50,7 +50,7 @@ const { data: dataExperience } = await useAsyncData<Experience[]>(() => {
           />
           <!-- Line between dots -->
           <div
-            v-if="index !== dataExperience.length - 1"
+            v-if="dataExperience && index !== dataExperience.length - 1"
             class="h-full w-px bg-slate-600/50"
           />
         </div>
@@ -74,7 +74,7 @@ const { data: dataExperience } = await useAsyncData<Experience[]>(() => {
               <a
                 v-if="experience.url"
                 :href="experience.url"
-                :target="experience.url"
+                target="_blank"
                 rel="noreferrer"
                 class="mb-1 flex items-center space-x-1.5"
               >
