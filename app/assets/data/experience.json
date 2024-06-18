@@ -58,7 +58,7 @@
       "Create Officeless Drive such as Google Drive from scratch",
       "Revamp UI Application",
       "Initiate Tech Stack for rewrite existing web app",
-      "Rewrite web app from VueJS 2 + javascript into VueJS 3 + typescript (coverage 60%)",
+      "Rewrite web app from Vue JS 2 + Javascript into Vue JS 3 + Typescript (coverage 60%)",
       "Refactor code & Code review"
     ],
     "stacks": [
